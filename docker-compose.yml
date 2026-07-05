@@ -1,6 +1,6 @@
 services:
   jellyfin-discovery:
-    build: .
+    image: ghcr.io/jamesmoore/jellyfin-discovery-shim:main
     network_mode: host
     restart: unless-stopped
     environment:
