@@ -10,9 +10,9 @@ jobs:
   delete_versions:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/delete-package-versions@v5
-      with: 
-        package-name: 'jellyfin-discovery-shim'
-        package-type: 'container'
-        min-versions-to-keep: 10
-        delete-only-untagged-versions: false
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: "jellyfin-discovery-shim"
+          package-type: "container"
+          min-versions-to-keep: 10
+          delete-only-untagged-versions: false
