@@ -1,0 +1,7 @@
+services:
+  jellyfin-discovery:
+    build: .
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      JELLYFIN_ADDRESS: "https://jellyfin.$DOMAIN" # set the $DOMAIN environment variable in your shell or .env file
